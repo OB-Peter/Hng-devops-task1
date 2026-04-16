@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3010;
+const PORT = 8000;
 
 app.use(express.json());
 
@@ -20,7 +20,7 @@ app.get('/me', (req, res) => {
     });
 });
 
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, '127.0.0.1', () => {
     console.log(`Server running on port ${PORT}`);
 });app.get('/', (req, res) => {
   res.send('Hello World!');
